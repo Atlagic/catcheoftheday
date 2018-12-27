@@ -2,15 +2,13 @@ import Rebase from "re-base";
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyDXUCNSpi5u07F76httlCTXAA4mPVQlEHs",
-  authDomain: "catch-of-the-day-wes-bos-2.firebaseapp.com",
-  databaseURL: "https://catch-of-the-day-wes-bos-2.firebaseio.com"
+    apiKey: "AIzaSyCmzqIPnhSRMRzJYohuUyb093V3MTu5kBc",
+    authDomain: "catch-of-the-day-atlagic.firebaseapp.com",
+    databaseURL: "https://catch-of-the-day-atlagic.firebaseio.com",
 });
 
-const base = Rebase.createClass(firebaseApp.database());
+const base = Rebase.createClass(firebase.database());
 
-// This is a named export
-export { firebaseApp };
+export { firebaseApp }
 
-// this is a default export
 export default base;
